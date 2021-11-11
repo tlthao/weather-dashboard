@@ -1,5 +1,8 @@
 <h1>Weather Dashboard</h1>
 
+![image](https://user-images.githubusercontent.com/50894080/141248473-042db094-7b0e-4738-923f-764836e1e7fe.png)
+
+
 <h2>Objective</h2>
 
 GIVEN a weather dashboard with form inputs<br>
