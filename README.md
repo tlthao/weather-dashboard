@@ -13,3 +13,6 @@ WHEN I view future weather conditions for that city<br>
 THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity<br>
 WHEN I click on a city in the search history<br>
 THEN I am again presented with current and future conditions for that city<br>
+
+<h3>Live Site Link:</h3>
+https://tlthao.github.io/weather-dashboard/
