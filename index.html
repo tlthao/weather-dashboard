@@ -1,21 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/70fcd40144.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <div class="topbox">
-        <h1>WEATHER DASHBOARD</h1>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+
+    
+        <div class="topbox">
+            <div class="site-title">
+                <h1>WEATHER DASHBOARD</h1>
+            </div>
+        </div>
+
+
+    <br>
+
+    <div class="container-fluid sidebox">
+        <div class=row>
+            <div class="col-md-3 pl-2" style="margin-bottom: 2px;">
+                <div class="box" style="width: 22rem;">
+                    <div class="card-body">
+                        <h4 style="text-align: center;">SEARCH FOR A CITY:</h4>
+                                <input type="text" class="form-control" id="city-input" style="text-align: center;">
+                            <button id="search-button" type="submit" class="btn btn-primary">SEARCH</button>
+                        </form>
+                    </div>
+                </div>
+                <div>
+                    <ul id="saved-cities" class="list-group" style="text-align: center;"></ul>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div id="current-weather" class='box'>
+                    <div class="box-body">
+                        <div id="city-date-icon">
+                            <span id='city-name'>
+                            </span>
+                            <span id='current-icon'></span>
+                        </div>
+                        <p class="box-text" id="current-temp"></p>
+                        <p class="box-text" id="current-humidity"></p>
+                        <p class="box-text" id="current-wind"></p>
+                        <p class="box-text" id="current-uv"></p>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="forecast-weather" class="col-md-9">
+                        <h4>5-DAY FORECAST:</h4>
+                        <div id="forecast-boxes">
+                            <div class="box forecast">
+                                <div id="forecast1" class="box-body">
+                                    <span class="box-title" id='forecast-date1'>
+                                    </span>
+                                    <span id='forecast-icon1'></span>
+                                    <p class="box-text" id="forecast-temp1"></p>
+                                    <p class="box-text" id="forecast-humidity1"></p>
+                                </div>
+                            </div>
+                            <div class="box forecast">
+                                <div id="forecast2" class="box-body">
+                                    <span class="box-title" id='forecast-date2'>
+                                    </span>
+                                    <span id='forecast-icon2'></span>
+                                    <p class="box-text" id="forecast-temp2"></p>
+                                    <p class="box-text" id="forecast-humidity2"></p>
+                                </div>
+                            </div>
+                            <div class="box forecast">
+                                <div id="forecast3" class="box-body">
+                                    <span class="box-title" id='forecast-date3'>
+                                    </span>
+                                    <span id='forecast-icon3'></span>
+                                    <p class="box-text" id="forecast-temp3"></p>
+                                    <p class="box-text" id="forecast-humidity3"></p>
+                                </div>
+                            </div>
+                            <div class="box forecast">
+                                <div id="forecast4" class="box-body">
+                                    <span class="box-title" id='forecast-date4'>
+                                    </span>
+                                    <span id='forecast-icon4'></span>
+                                    <p class="box-text" id="forecast-temp4"></p>
+                                    <p class="box-text" id="forecast-humidity4"></p>
+                                </div>
+                            </div>
+                            <div class="box forecast">
+                                <div id="forecast5" class="box-body">
+                                    <span class="box-title" id='forecast-date5'>
+                                    </span>
+                                    <span id='forecast-icon5'></span>
+                                    <p class="box-text" id="forecast-temp5"></p>
+                                    <p class="box-text" id="forecast-humidity5"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="sidebox">
-        <h3>SEARCH FOR A CITY:</h3>
-        <input id="search-inpuit" class="form-input" type="text" placeholder="SEARCH">
-    </div>
-    <div class="mainbox">
-        <h3>5 DAY FORECAST:</h3>
-    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
+    <script src="script.js"></script>
+
+
+<script src="script.js"></script>
 </body>
+
 </html>
